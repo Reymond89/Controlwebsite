@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header__container">
+        <picture class="header__picture">
+            <img class="logo" src="assets/img/logo.png" alt="">
+        </picture>
+        <nav>
+            <ul class="menu_list" id="menu_click">
+                <li><a href="#">Game Controllers</a></li>
+                <li><a href="#">VR Acccessories</a></li>
+                <li><a href="#">Media Remotes</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+            <img class="menu_btn" src="assets/img/menu.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <section class="cover__container">
+            <div class="cover__wrapper">
+                <div class="cover__text-left">
+                    <div class="cover__line"></div>
+                    <h1 class="cover__title">PS4 V2 <br> DualShock 4</h1>
+                    <h2 class="cover__subtitle">Wireless Controller for PlayStation 4</h2>
+                    <p class="cover__description">(Compatible/Generic)</p>
+                    <span class="cover__price">$32.50</span>
+                    <button class="cover__button">Buy Now <img class="arrow" src="assets/img/arrow.png" alt=""></button>
+                </div>
+                <picture class="cover__img-right">
+                    <img class="cover__control" src="assets/img/controller.png" alt="">
+                    <div class="cover__background"></div>
+                   
+                </picture>
+            </div>
+            <div class="social__media">
+                <li><a href="#"><img class="media__icons" src="assets/img/facebookicon.png" alt=""></a></li>
+                <li><a href="#"><img class="media__icons" src="assets/img/ig.png" alt=""></a></li>
+                <li><a href="#"><img class="media__icons" src="assets/img/tw.png" alt=""></a></li>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const menuBtn = document.querySelector('.menu_btn');
+        const menuList = document.querySelector('.menu_list');
+        
+        menuBtn.addEventListener('click',()=>{
+            menuList.classList.toggle('mobile-menu')
+        });
+
+    </script>
+
+
+</body>
+</html>
